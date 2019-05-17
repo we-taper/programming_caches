@@ -18,7 +18,7 @@ Keywords: collection, pipeline, filter, map, reduce
       - [clusterjob] is useful for submitting cluster jobs.
 
 [Pyflow]: http://illumina.github.io/pyflow/
-[scilugi]: https://github.com/pharmbio/sciluigi
+[sciluigi]: https://github.com/pharmbio/sciluigi
 [Ruffus]: http://www.ruffus.org.uk/
 [martian]: https://martian-lang.org/
 [clusterjob]: http://clusterjob.org/
