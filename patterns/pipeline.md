@@ -17,8 +17,20 @@ Keywords: collection, pipeline, filter, map, reduce
       - [sciluigi] and [martian] are serious project, things I should really try.
       - [clusterjob] is useful for submitting cluster jobs.
 
+Notes:
+
+*message passed*: 
+
+The message passed between different steps of a pipeline, will change its structure almost in all steps.
+I feel this makes it hard to debug in complex situations. I thought I need something like a nested namedtuples (in case of python) so that I could easily use type hints to document and maybe debug a code. 
+
+Some potential solutions:
+- <https://github.com/brennv/namedtupled> : creates namedtuples from json files. But it does not support type hinting.
+- Google's Protobuf: creates a class from a specification. It also does not support type hinting (maybe it [will](gpth) support in the future). The good things about protobuf is that it checks its contents' type and should run very fast.
+
 [Pyflow]: http://illumina.github.io/pyflow/
 [sciluigi]: https://github.com/pharmbio/sciluigi
 [Ruffus]: http://www.ruffus.org.uk/
 [martian]: https://martian-lang.org/
 [clusterjob]: http://clusterjob.org/
+[gpth]: https://github.com/protocolbuffers/protobuf/issues/2638
