@@ -27,6 +27,8 @@ I feel this makes it hard to debug in complex situations. I thought I need somet
 Some potential solutions:
 - <https://github.com/brennv/namedtupled> : creates namedtuples from json files. But it does not support type hinting.
 - Google's Protobuf: creates a class from a specification. It also does not support type hinting (maybe it [will](gpth) support in the future). The good things about protobuf are that it checks its contents' type and should run very fast.
+- [JSON Schema](jsonschema) also looks good, although it still comes without default type hinting.
+- Python 3.**7** introduces [dataclasses](https://docs.python.org/3/library/dataclasses.html).
 
 [Pyflow]: http://illumina.github.io/pyflow/
 [sciluigi]: https://github.com/pharmbio/sciluigi
@@ -34,3 +36,4 @@ Some potential solutions:
 [martian]: https://martian-lang.org/
 [clusterjob]: http://clusterjob.org/
 [gpth]: https://github.com/protocolbuffers/protobuf/issues/2638
+[jsonschema]: https://json-schema.org/understanding-json-schema/index.html
